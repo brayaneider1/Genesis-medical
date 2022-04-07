@@ -1,0 +1,61 @@
+/*
+ * Shortcode: projects.scss
+ * -----------------------------------------------
+*/
+.tm-project {
+  position: relative;
+  overflow: hidden;
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    top: 0;
+    background: rgba(35, 35, 35, 0.9);
+    padding: 30px;
+    opacity: 0;
+    transition: 300ms;
+    transform: skewX(10deg);
+    .title {
+      a {
+        transition: 300ms;
+        &:hover {
+          color: var(--theme-color1);
+        }
+      }
+    }
+    .description {
+      color: #fff;
+      opacity: 7;
+    }
+    .project-icon {
+      i {
+        background: var(--theme-color1);
+        font-size: 72px;
+        color: #222;
+        padding: 15px;
+        display: inline-block;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &:hover {
+    .details {
+      opacity: 1;
+      transform: skewX(0);
+    }
+  }
+}
+
+.projects-move-right {
+  margin-right: -300px;
+
+  @include media-breakpoint-down(lg) {
+    margin-right: 0;
+  }
+}

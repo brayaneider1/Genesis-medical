@@ -1,0 +1,98 @@
+/*
+ * Shortcode: services.scss
+ * -----------------------------------------------
+*/
+.serivce-section-bg-object2 {
+  position: relative;
+  &:after {
+    background: #F6F6F6;
+    position: absolute;
+    content: "";
+    height: 340px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.tm-sc-services {
+  &.services-style-current-theme {
+    &:hover {
+      .thumb {
+        img.w-100 {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+          transition: all 0.4s ease-out;
+        }
+      }
+    }
+    .thumb {
+      position: relative;
+      overflow: hidden;
+      img.w-100 {
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+        transition: all 0.4s ease-out;
+      }
+      .service-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        i {
+          background: #FBD621;
+          color: #222;
+          font-size: 72px;
+          padding: 15px;
+          display: inline-block;
+        }
+      }
+
+    }
+    .details {
+      padding: 30px;
+      background: #fff;
+      border-top: none;
+      border-radius:8px;
+      box-shadow: ( 0px 10px 30px rgba(5, 5, 5, 0.08) );
+    }
+  }
+}
+
+  .tm-service .thumb {
+    overflow: hidden;
+    position: relative;
+    }
+    .tm-service .thumb img {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      transition: all 0.4s ease-in-out; }
+      @media (prefers-reduced-motion: reduce) {
+        .tm-service .thumb img {
+          transition: none; } }
+    .tm-service .thumb .overlay {
+      background-color: rgba(29, 29, 35, 0.7);
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: all 0.3s ease;
+      }
+      .tm-service .thumb .overlay .icon {
+        font-size: 24px;
+        position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        margin: 0 auto; }
+  .tm-service:hover .thumb .overlay {
+    opacity: 1; }

@@ -1,0 +1,28 @@
+/*
+ * Shortcode: funfacts.scss
+ * -----------------------------------------------
+*/
+.funfact-section-border-top {
+  border-top: 10px solid var(--theme-color1);
+}
+.funfact-current-theme-style {
+  .tm-sc-funfact {
+    .funfact-icon {
+      i {
+        background: var(--theme-color1);
+        font-size: 72px;
+        display: inline-block;
+        padding: 20px;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+    }
+    .counter {
+      font-size: 50px;
+    }
+    .title {
+      color: #808080;
+      font-size: 16px;
+    }
+  }
+}
