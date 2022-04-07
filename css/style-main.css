@@ -159,7 +159,7 @@ html {
   outline: none !important; }
 
 body {
-  line-height: 1.8;
+  line-height: 1.5;
   color: #808080;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -10669,7 +10669,7 @@ body .vc_row .tm-stretched-bg-active.vc_column_container .vc_column-inner:before
 */
 .tab-content {
   padding: 15px;
-  border: 1px solid #eee; }
+/*   border: 1px solid #eee;  */}
   .tab-content table p {
     margin: 0;
     margin-bottom: 0px; }
