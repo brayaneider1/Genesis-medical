@@ -12677,7 +12677,7 @@ footer#footer.footer-black .widget_calendar #today {
   background-color: #fff;
   border: 1px solid #eee;
   box-shadow: 0px 10px 30px rgba(5, 5, 5, 0.08);
-  border-radius: 15px;
+  border-radius:0 0 15px 15px;
   overflow: hidden;
   transition: all 500ms ease 0s; }
   @media (prefers-reduced-motion: reduce) {
@@ -12687,21 +12687,20 @@ footer#footer.footer-black .widget_calendar #today {
     position: relative;
     overflow: hidden; }
     .product .product-header .onsale {
-      border-radius: 15px;
       background-size: 200% auto;
-      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      font-size: 1rem;
+/*       text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+ */      font-size: 1rem;
       position: absolute;
-      left: 10px;
-      top: 10px;
+      left: 0px;
+      top: 0px;
       text-align: center;
       color: #fff;
       display: block;
-      padding: 0 12px;
       text-transform: uppercase;
+      width: 100px;
       z-index: 3;
-      box-shadow: 0px 10px 30px rgba(5, 5, 5, 0.08);
-      transition: all 0.3s ease-in-out; }
+/*       box-shadow: 0px 10px 30px rgba(5, 5, 5, 0.08);
+ */      transition: all 0.3s ease-in-out; }
       @media (prefers-reduced-motion: reduce) {
         .product .product-header .onsale {
           transition: none; } }
@@ -21979,4 +21978,16 @@ $grid-breakpoints: (
 
     .rounded-4{
       border-radius: 20px;
+    }
+
+
+    .btn-gray-custom{
+      color: white;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 10px 20px;
+      background-color: #8a8d8f;
+      font-size: 20px;
+      font-weight: 600;
+      width: auto;
     }
