@@ -21969,3 +21969,14 @@ $grid-breakpoints: (
     font-size: 2.2rem; }
   h3 {
     font-size: 2.0rem; } }
+
+
+    .image-article{
+      width: 40%;
+      height: 300px;
+      float: left;
+    }
+
+    .rounded-4{
+      border-radius: 20px;
+    }
